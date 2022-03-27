@@ -1,0 +1,19 @@
+#!/bin/sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+bspc monitor -d I II III IV V VI VII VIII IX X
+bspc config border_width         2
+bspc config window_gap           16
+bspc config split_ratio          0.6
+bspc config focused_border_color \#89DCEB
+bspc config normal_border_color \#89DCEB
+
+feh --bg-fill ".walls/wallhaven-p2x7e9.jpg"
+
+# launch polybar
+polybar
+
+# launch picom
+picom
+
+# set br keys
+setxkbmap -model abnt2 -layout br -variant abnt2
