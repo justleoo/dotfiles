@@ -17,13 +17,13 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 - app launcher: rofi
 - audio visualizer: cava
 - compositor: picom (not configurated)
-- fetches: skyfetch, neofetch, pfetch
+- fetches: [skyfetch](https://github.com/justleoo/skyfetch), neofetch, pfetch
 
 ## shell 🐚
 
-i use zsh, with common theme, view config in `home/.zshrc`
+i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.zshrc`
 
-## showcase
+## showcase 
 
 <img src="showcase/showcase.png"/>
 <img src="showcase/yeah.png"/>
@@ -31,3 +31,13 @@ i use zsh, with common theme, view config in `home/.zshrc`
 ## notes
 
 if you like this config, give a star? 
+
+## license 📜
+
+MIT license, see license file.
+
+## thanks 💙
+
+[pagankeymaster](https://github.com/pagankeymaster) for help me with tym config
+
+[catppuccin](https://github.com/catppuccin) for made a awesome theme 😼
