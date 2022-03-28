@@ -16,7 +16,7 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 - terminal: tym and kitty
 - app launcher: rofi
 - audio visualizer: cava
-- compositor: picom (not configurated)
+- compositor: picom
 - fetches: [skyfetch](https://github.com/justleoo/skyfetch), neofetch, pfetch
 
 ## shell 🐚
@@ -41,3 +41,5 @@ MIT license, see license file.
 [pagankeymaster](https://github.com/pagankeymaster) for help me with tym config
 
 [catppuccin](https://github.com/catppuccin) for made a awesome theme 😼
+
+[bleyom](https://github.com/bleyom) by picom config with some modifications of mine
