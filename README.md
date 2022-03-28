@@ -8,8 +8,7 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 
 - WM: bspwm
 - notification system: dunst
-- shell: zsh 
-- zsh theme: common
+- shell: zsh
 - OS: arch linux
 - keybinding handler: sxhkd
 - editor: neovim (with nvchad)
@@ -18,6 +17,11 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 - app launcher: rofi
 - audio visualizer: cava
 - compositor: picom (not configurated)
+- fetches: skyfetch, neofetch, pfetch
+
+## shell 🐚
+
+i use zsh, with common theme, view config in `home/.zshrc`
 
 ## showcase
 
@@ -27,5 +31,3 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 ## notes
 
 if you like this config, give a star? 
-
-see wallpapers in `.walls/`
