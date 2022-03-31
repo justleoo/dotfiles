@@ -4,7 +4,7 @@ local tym = require('tym')
 tym.set('width', 80)
 tym.set('height', 20)
 
-local font_size = '14'
+-- set tym font
 tym.set('font', 'JetBrainsMono Nerd Font 12')
 
 -- set by table
