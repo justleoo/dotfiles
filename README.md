@@ -44,3 +44,5 @@ MIT license, see license file.
 [catppuccin](https://github.com/catppuccin) for made a awesome theme 😼
 
 [bleyom](https://github.com/bleyom) by picom config with some modifications of mine
+
+[alphatechnolog](https://github.com/alphatechnolog) for help me with eww
