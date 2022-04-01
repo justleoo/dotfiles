@@ -25,6 +25,7 @@ i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.
 
 ## showcase 
 
+<img src="showcase/hi.png"/>
 <img src="showcase/showcase.png"/>
 <img src="showcase/yeah.png"/>
 

@@ -1,0 +1,39 @@
+// Global
+*{
+  all: unset;
+}
+
+// Variable Color's
+$background: #1E1E2E;
+$foreground: #6E6C7E;
+
+$black: #08151a;
+$gray: #1f2335;
+$red: #DF5B61;
+$green: #FFFFFF;
+$yellow: #DE8F78;
+$blue: #6791C9;
+$magenta: #BC83E3;
+$cyan: #67AFC1;
+$white: $foreground;
+
+.music-box, .stats-container {
+  background: $background;
+  border: solid 1px $black;
+  border-radius: 15px;
+  font-family: Iosevka Nerd Font;
+  font-size: 15px;
+  color: $green;
+}
+
+.prev-control, .next-control {
+  margin-top: -1.15rem;
+  font-size: 35px;
+  color: $blue;
+}
+
+.play-pause-control {
+  color: $cyan;
+  font-size: 40px;
+  margin-top: -1.2rem;
+}

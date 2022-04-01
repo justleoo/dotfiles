@@ -1,0 +1,17 @@
+#!/bin/bash
+
+get_icon () {
+  status=$(playerctl status)
+  if [[ $status == "Paused" ]]; then
+    echo ""
+  else
+    echo ""
+  fi
+}
+
+
+if [[ $1 == "get-audio" ]]; then
+  playerctl metadata --format "{{ title }}" 2>&1
+elif [[ $1 == "get-icon" ]]; then
+  get_icon
+fi
