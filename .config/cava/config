@@ -1,2 +1,4 @@
-[color]
-foreground = cyan
+[general]
+bars = 120
+bar_width = 4
+bar_spacing = 1

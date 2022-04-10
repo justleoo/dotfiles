@@ -19,7 +19,7 @@
     horizontal_padding = 15
     text_icon_padding = 0
     frame_width = 0
-    frame_color = "#1E1E2E"
+    frame_color = "#0f0f17"
     separator_color = frame
     sort = yes
     font = Iosevka Medium Italic 10
@@ -39,21 +39,20 @@
     max_icon_size = 80
 
 [urgency_low]
-    background = "#1E1E2E"
-    foreground = "#D9E0EE"
-    highlight  = "#D9E0EE"
+    background = "#0f0f17"
+    foreground = "#bfc9db"
+    highlight  = "#c0caf5"
     timeout = 6
 
 [urgency_normal]
-    background = "#1E1E2E"
-    foreground = "#D9E0EE"
-    highlight  = "#D9E0EE"
-    highlight-background = "#232338"
+    background = "#0f0f17"
+    foreground = "#bfc9db"
+    highlight  = "#c0caf5"
+    highlight-background = "#1f2335"
     timeout = 6
 
 [urgency_critical]
-    background = "#1E1E2E"
-    foreground = "#D9E0EE"
-    highlight  = "#D9E0EE"
+    background = "#0f0f17"
+    foreground = "#bfc9db"
+    highlight  = "#c0caf5"
     timeout = 10
-

@@ -1,103 +1,84 @@
-configuration{
-    modi: "run,drun,window";
-    lines: 5;
-    font: "JetBrainsMono Nerd Font 14";
-    show-icons: true;
-    icon-theme: "Zafiro icons";
-    terminal: "st";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-drun: "   ";
-    display-run: "   ";
-    display-window: " 﩯  ";
-    display-Network: " 󰤨";
-    sidebar-mode: true;
+configuration {
+	modi: "drun";
+	display-drun: "Apps";
+	drun-display-format: "{name}";
+	font: "JetBrainsMono Nerd Font 9";
+	show-icons: true;
+	icon-theme: "Papirus";
 }
 
-@theme "catppuccin"
+@theme "/dev/null"
 
-element-text, element-icon , mode-switcher {
-    background-color: inherit;
-    text-color:       inherit;
+* {
+	bg: #0f0f17;
+	fg: #bfc9db;
+	accent:	#13141c;
+  	active: #646a73;
+	rad: 12px;
+	background-color: @bg;
+	text-color: @fg;
 }
 
 window {
-    height: 360px;
-    border: 3px;
-    border-color: @border-col;
-    background-color: @bg-col;
-}
-
-mainbox {
-    background-color: @bg-col;
+	transparency: "real";
+	height: 90%;
+  width: 22%;
+	location: east;
+	x-offset: -1.5%;
+	y-offset: 0%;
 }
 
 inputbar {
-    children: [prompt,entry];
-    background-color: @bg-col;
-    border-radius: 5px;
-    padding: 2px;
+	children: [ textbox, entry ];
+	expand: false;
+	margin: 20px;
+	border-radius: @rad;
+	background-color: @active;
 }
 
-prompt {
-    background-color: @blue;
-    padding: 6px;
-    text-color: @bg-col;
-    border-radius: 3px;
-    margin: 20px 0px 0px 20px;
-}
-
-textbox-prompt-colon {
+textbox {
+    str: "";
     expand: false;
-    str: ":";
+    padding: 0 1% 0;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    border-radius: @rad;
+    background-color: @accent;
+    text-color: @fg;
+    font: "JetBrainsMono Nerd Font 12";
 }
 
-entry {
-    padding: 6px;
-    margin: 20px 0px 0px 10px;
-    text-color: @fg-col;
-    background-color: @bg-col;
+entry{
+	expand: true;
+	padding: 2%;
+    placeholder: "Search";
+	border-radius: @rad;
+    background-color: @active;
 }
 
 listview {
-    border: 0px 0px 0px;
-    padding: 6px 0px 0px;
-    margin: 10px 0px 0px 20px;
-    columns: 2;
-    background-color: @bg-col;
+	columns: 2;
+	lines: 2;
+	cycle: false;
+    margin: 20px;
 }
 
 element {
-    padding: 5px;
-    background-color: @bg-col;
-    text-color: @fg-col  ;
+	orientation: vertical;
+	padding: 0.5em;
 }
 
-element-icon {
-    size: 25px;
+element-text, element-icon {
+	padding: 0.2em;
+	horizontal-align: 0.5;
+	background-color: inherit;
 }
+
+element-icon { size: 48px; }
+listview, element, element selected, element-text, element-icon { cursor: pointer; }
 
 element selected {
-    background-color:  @selected-col ;
-    text-color: @fg-col2  ;
+	background-color: @active;
+	text-color: @fg;
+	border-radius: @rad;
 }
-
-mode-switcher {
-    spacing: 0;
-  }
-
-button {
-    padding: 10px;
-    background-color: @bg-col-light;
-    text-color: @grey;
-    vertical-align: 0.5; 
-    horizontal-align: 0.5;
-}
-
-button selected {
-  background-color: @bg-col;
-  text-color: @blue;
-}
-

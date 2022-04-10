@@ -1,21 +1,13 @@
 #!/bin/sh
 pgrep -x sxhkd > /dev/null || sxhkd &
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 1 2 3 4 5 6
 bspc config border_width         2
 bspc config window_gap           16
 bspc config split_ratio          0.6
 bspc config focused_border_color "#1b1f20"
 bspc config presel_feedback_color "#d8b4bd"
 bspc config top_padding 40
+bspc config -m HDMI-0 left_padding 40
+bspc config -m HDMI-0 top_padding 0
 
-hsetroot -cover ./Downloads/wallhaven-p2x7e9.jpg
-
-# launch polybar
-polybar &
-
-# launch picom
-picom &
-
-# set br keys
-setxkbmap -model abnt2 -layout br -variant abnt2
-
+~/.config/bspwm/scripts/start.sh

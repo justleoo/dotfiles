@@ -42,7 +42,12 @@ super + Escape
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
+# restart bspwm
+
+super + shift + c
+	bspc wm -r
+
+# quit bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 

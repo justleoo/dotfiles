@@ -6,17 +6,16 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 
 ## info and requirements
 
-- WM: bspwm
-- notification system: dunst
-- shell: zsh
-- OS: arch linux
-- keybinding handler: sxhkd
-- editor: neovim (with nvchad)
-- bar: polybar
-- terminal: tym and kitty
-- app launcher: rofi
-- audio visualizer: cava
-- compositor: picom
+- WM: [bspwm](https://github.com/baskerville/bspwm)
+- notification system: [dunst](https://github.com/dunst-project/dunst)
+- shell: [zsh](https://ohmyz.sh)
+- OS: [arch](https://archlinux.org)
+- keybinding handler: [sxhkd](https://github.com/baskerville/sxhkd)
+- bar and widgets: [eww](https://github.com/elkowar/eww)
+- terminal: [tym](https://github.com/endaaman/tym)
+- app launcher: [rofi](https://github.com/davatorium/rofi)
+- audio visualizer: [cava](https://github.com/karlstav/cava)
+- compositor: [picom](https://github.com/yshui/picom)
 - fetches: [skyfetch](https://github.com/justleoo/skyfetch), neofetch, pfetch
 
 ## shell 🐚
@@ -25,9 +24,8 @@ i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.
 
 ## showcase 
 
-<img src="showcase/hi.png"/>
-<img src="showcase/showcase.png"/>
-<img src="showcase/yeah.png"/>
+<img src="showcase/ok.png"/>
+<img src="showcase/unknown.png"/>
 
 ## notes
 
@@ -39,10 +37,4 @@ MIT license, see license file.
 
 ## thanks 💙
 
-[pagankeymaster](https://github.com/pagankeymaster) for help me with tym config
-
-[catppuccin](https://github.com/catppuccin) for made a awesome theme 😼
-
-[bleyom](https://github.com/bleyom) by picom config with some modifications of mine
-
-[alphatechnolog](https://github.com/alphatechnolog) for help me with eww
+[saimoomedits](https://github.com/saimoomedits) for help me a lot with all
