@@ -1,12 +1,12 @@
 * {
     all: unset;
     font-family: feather;
-    font-family: JetBrainsMono NF; 
+    font-family: Iosevka Nerd Font; 
 }
 
 /** workspace shit **/
 .works {
-font-size: 22px;
+font-size: 18px;
 font-weight: normal;
 margin: 5px 8px 5px 14px;
 background-color: #0f0f17;
@@ -37,3 +37,13 @@ color: #3e424f;
     border-radius: 16px;
 }
 
+.time {
+  font-family: Iosevka Nerd Font;
+  font-weight: bold;
+  font-size: 0.95em;
+  background-color: #0f0f17;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: .7rem 0 .5rem 0;
+  margin: .5rem 0 .5rem 0;
+}

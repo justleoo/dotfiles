@@ -1,0 +1,5 @@
+alias fetch="skyfetch"
+alias panes="bash ~/.scripts/panes"
+alias tux="bash ~/.scripts/tux"
+alias ohmyzsh="nvim ~/.zshrc"
+alias nv="nvim"

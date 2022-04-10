@@ -20,12 +20,15 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 
 ## shell 🐚
 
-i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.zshrc`
+i use [oh my zsh](https://ohmyz.sh), with starship theme, view config in `~/home/.zshrc`
+#### zsh prompt:
+
+<img src="showcase/prompt.png"/>
 
 ## showcase 
 
 <img src="showcase/ok.png"/>
-<img src="showcase/unknown.png"/>
+<img src="showcase/showcase.png"/>
 
 ## notes
 
