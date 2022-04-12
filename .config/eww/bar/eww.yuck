@@ -1,50 +1,75 @@
 (deflisten workspace "scripts/workspaces")
+(defvar IMAGE "../images/music.png")
 
+;; workspaces
 (defwidget workspaces []
   (literal :content workspace))
 
+
+;; profile widget
+(defwidget profile []
+  (box :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false"
+  (button :class "profile_class" :style "background-image: url('${IMAGE}');" :onclick "$HOME/.config/eww/bar/scripts/music" " ")))
+; time widget
+(defwidget time []
+    (box    :orientation "v" 
+            :class "time" 
+            :valign "end"
+            :halign "center"
+    (button    :class "time-hour" hour)
+    (button    :class "time-min"  min)))
+(defpoll hour    :interval "1s"    "date '+%H'")
+(defpoll min    :interval "1s"    "date '+%M'")
+
+
+;; bottom widgets
+(defwidget bottom []
+    (box    :orientation "v" 
+            :space-evenly false 
+            :valign "end" 
+            :spacing 5
+(time)))
+
+
+
+;; center widgets
+(defwidget center []
+    (box :orientation "h" 
+         :space-evenly false  
+         :halign "center"
+         :class "right_modules"
+         :valign "center"
+(workspaces)))
+
+
+
+;; top widgets
+(defwidget top []
+    (box :orientation "v" 
+         :space-evenly false  
+(profile)))
+
+
+
+;; add widgets to bar
+(defwidget bar_1 []
+  (box :class "bar_class"
+       :orientation "v"
+           :hexpand "false"
+           :vexpand "false"
+  (top)
+  (center)
+  (bottom)))
+
+
+;; the bar itself
 (defwindow bar
           :geometry (geometry :x "5px"
                        :y "0px"
-                       :width "40px"
+                       :width "50px"
                        :height "90%"
                        :anchor "left center")
           :stacking "fg"
           :windowtype "dock"
   (bar_1))
 
-(defwidget bottom []
-    (box    :orientation "v" 
-            :space-evenly false 
-(time)))
-
-(defwidget end []
-    (box :orientation "v" 
-         :space-evenly "false" 
-         :valign "end" 
-         :spacing 5
-(bottom)))
-
-(defwidget center []
-    (box :orientation "h" 
-         :space-evenly false  
-         :halign "start"
-         :class "right_modules"
-         :valign "center"
-(workspaces)))
-
-(defwidget bar_1 []
-  (box :class "bar_class"
-       :orientation "v"
-  (center)
-  (end)
-    ))
-
-(defwidget time []
-    (box    :orientation "v" 
-            :class "time" 
-            :valign "end"
-    (button    :class "time-hour" hour)
-    (button    :class "time-min"  min)))
-(defpoll hour    :interval "1s"    "date '+%H'")
-(defpoll min    :interval "1s"    "date '+%M'")

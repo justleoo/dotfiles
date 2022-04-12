@@ -20,15 +20,17 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 
 ## shell 🐚
 
-i use [oh my zsh](https://ohmyz.sh), with starship theme, view config in `~/home/.zshrc`
-#### zsh prompt:
+i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.zshrc`
 
-<img src="showcase/prompt.png"/>
+## wallpapers
+
+my friend found a script for change wallpaper to random wallpaper, see this in `~/.config/bspwm/scripts/wall`, and see all wallpapers in `~/.config/bspwm/walls`
 
 ## showcase 
 
-<img src="showcase/ok.png"/>
-<img src="showcase/showcase.png"/>
+<img src="showcase/rice.png"/>
+<img src="showcase/rice2.png"/>
+<img src="showcase/moreonerice.png"/>
 
 ## notes
 
