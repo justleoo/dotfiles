@@ -10,6 +10,3 @@ picom &
 
 # set br keys 
 setxkbmap -model abnt2 -layout br -variant abnt2
-
-# set wall
-hsetroot -cover ~/.config/bspwm/walls/bg.png

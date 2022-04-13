@@ -1,9 +1,3 @@
-// Global
-*{
-  all: unset;
-}
-
-// Variable Color's
 $background: #0f0f17;
 $foreground: #6E6C7E;
 
@@ -14,8 +8,15 @@ $green: #FFFFFF;
 $yellow: #DE8F78;
 $blue: #6791C9;
 $magenta: #BC83E3;
-$cyan: #67AFC1;
+$cyan: #67AFC1; 
+$mauve: #D7BEDA;
+$flamingo: #f2cdcd;
 $white: $foreground;
+
+* {
+  all: unset;
+  background-color: $background;
+}
 
 .music-box, .stats-container {
   background: $background;
@@ -36,4 +37,22 @@ $white: $foreground;
   color: $cyan;
   font-size: 40px;
   margin-top: -1.2rem;
+}
+
+.user {
+  background-color: $background;
+}
+
+.logo-image {
+  background-color: $background;
+  margin-top: 25px;
+}
+
+.logo-label {
+  background-color: $background;
+  font-family: Iosevka Nerd Font;
+  color: $white;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 700;
 }

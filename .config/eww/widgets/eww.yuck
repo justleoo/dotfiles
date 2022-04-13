@@ -1,1 +1,2 @@
-(include "music/music.yuck")
+(include "src/music.yuck")
+(include "src/user.yuck")

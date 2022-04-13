@@ -1,0 +1,26 @@
+(defvar PROFILE "../images/profile.png")
+
+(defwindow user
+           :monitor 0
+           :geometry (geometry :x "-485"
+                               :y "260"
+                               :width "260"
+                               :height "335"
+                               :anchor "center top")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (logo))
+
+(defwidget logo []
+  (box :orientation "v"
+       :halign "center"
+       :space-evenly false
+       :class "user"
+    (image :path "${PROFILE}"
+           :image-width 210
+           :class "logo-image")
+    (label :text "leo"
+           :class "logo-label")
+    (label :text "there is no way to happiness."
+           :class "logo-hostname")))

@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-eww -c ${HOME}/.config/eww/bar open bar

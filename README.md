@@ -30,7 +30,6 @@ my friend found a script for change wallpaper to random wallpaper, see this in `
 
 <img src="showcase/rice.png"/>
 <img src="showcase/rice2.png"/>
-<img src="showcase/moreonerice.png"/>
 
 ## notes
 
