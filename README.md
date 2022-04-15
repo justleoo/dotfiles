@@ -42,3 +42,4 @@ MIT license, see license file.
 ## thanks 💙
 
 [saimoomedits](https://github.com/saimoomedits) for help me a lot with all
+[torvalds](https://github.com/torvalds) for add [uwu](https://github.com/justleoo/dotfiles/blob/main/uwu) file uwu
