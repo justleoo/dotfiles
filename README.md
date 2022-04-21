@@ -9,6 +9,7 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 - WM: [bspwm](https://github.com/baskerville/bspwm)
 - notification system: [dunst](https://github.com/dunst-project/dunst)
 - shell: [zsh](https://ohmyz.sh)
+- GTK theme: [levuaska](https://github.com/saimoomedits/levuaska/tree/main/.themes/levuaska)
 - OS: [arch](https://archlinux.org)
 - keybinding handler: [sxhkd](https://github.com/baskerville/sxhkd)
 - bar and widgets: [eww](https://github.com/elkowar/eww)
@@ -28,8 +29,7 @@ my friend found a script for change wallpaper to random wallpaper, see this in `
 
 ## showcase 
 
-<img src="showcase/rice.png"/>
-<img src="showcase/rice2.png"/>
+<img src="showcase/show.png"/>
 
 ## notes
 
@@ -41,6 +41,6 @@ MIT license, see license file.
 
 ## thanks 💙
 
-[saimoomedits](https://github.com/saimoomedits) for help me a lot with all
+[saimoomedits](https://github.com/saimoomedits) for help me a lot with all, and ranger config
 
 [torvalds](https://github.com/torvalds) for add [uwu](https://github.com/justleoo/dotfiles/blob/main/uwu) file uwu

@@ -67,7 +67,7 @@
           :geometry (geometry :x "5px"
                        :y "0px"
                        :width "50px"
-                       :height "90%"
+                       :height "95%"
                        :anchor "left center")
           :stacking "fg"
           :windowtype "dock"

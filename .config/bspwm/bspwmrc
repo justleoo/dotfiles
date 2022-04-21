@@ -12,6 +12,4 @@ pkill borders ; borders &
 bspc config top_padding 45
 bspc config -m HDMI-0 left_padding 50
 bspc config -m HDMI-0 top_padding 0
-
 ~/.config/bspwm/scripts/start.sh
-~/.config/bspwm/scripts/wall
