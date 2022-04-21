@@ -1,0 +1,64 @@
+#!/bin/bash
+
+EWW="$HOME/.local/bin/eww"
+
+declare -a widgets=('music' 'user')
+declare -a args=('toggle' 'open' 'close')
+
+eww () {
+  $EWW -c $HOME/.config/eww/widgets/ ${@}
+}
+
+before_hook () {
+  if ! eww ping 2>&1 > /dev/null; then
+    eww daemon
+  fi
+}
+
+help () {
+  echo "error: valid commands: ${args[@]}"
+}
+
+react_toggle () {
+  for widget in ${widgets[@]}; do
+    if [[ $(eww windows | grep "^*${widget}") == "" ]]; then
+      eww open $widget
+    else
+      eww close $widget
+    fi
+  done
+}
+
+react_open () {
+  for widget in ${widgets[@]}; do
+    eww open $widget
+  done
+}
+
+react_close () {
+  for widget in ${widgets[@]}; do
+    eww close $widget
+  done
+}
+
+main () {
+  local choice=$1
+
+  if [[ $choice == "" ]]; then
+    help
+    exit 1
+  fi
+
+  for arg in ${args[@]}; do
+    if [[ $arg == $choice ]]; then
+      react_$choice
+      exit 0
+    fi
+  done
+
+  help
+  exit 1
+}
+
+before_hook
+main ${@}

@@ -13,7 +13,3 @@ setxkbmap -model abnt2 -layout br -variant abnt2
 
 # open borders script
 bash ~/.config/bspwm/scripts/borders
-
-# open wall script
-
-~/.config/bspwm/scripts/wall

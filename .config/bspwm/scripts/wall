@@ -1,7 +1,0 @@
-#!/bin/bash
-
-FILE=$(echo $((1 + $RANDOM % 4)))
-
-dir="$HOME/.config/bspwm/walls/"
-
-feh --bg-scale "$dir$FILE.jpg"

@@ -25,11 +25,27 @@ i use [oh my zsh](https://ohmyz.sh), with common theme, view config in `~/home/.
 
 ## wallpapers
 
-my friend found a script for change wallpaper to random wallpaper, see this in `~/.config/bspwm/scripts/wall`, and see all wallpapers in `~/.config/bspwm/walls`
+ahmm, see the wallpapers in `~/.config/bspwm/walls/`
+
+## eww notes
+
+i made a script to open and close eww widgets with my friend, see this in `~/.scripts/dash`, options of script:
+
+##### `dash toggle`:
+
+if the widgets are not open, this open the widgets, and if you execute again, close the widgets.
+
+##### `dash open`:
+
+open the widgets
+
+##### `dash close`
+
+close the widgets
 
 ## showcase 
 
-<img src="showcase/show.png"/>
+<img src="showcase/rice.png"/>
 
 ## notes
 
@@ -41,6 +57,6 @@ MIT license, see license file.
 
 ## thanks 💙
 
-[saimoomedits](https://github.com/saimoomedits) for help me a lot with all, and ranger config
+[saimoomedits](https://github.com/saimoomedits) for help me a lot with all! <3
 
 [torvalds](https://github.com/torvalds) for add [uwu](https://github.com/justleoo/dotfiles/blob/main/uwu) file uwu
