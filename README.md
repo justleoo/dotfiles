@@ -65,7 +65,7 @@ cp .scripts/* ~/.scripts/
 chmod +x ./$HOME/.scripts/*
 cp -r ./.config/* ~/.config/
 chmod +x ~/.config/bspwm/bspwmrc
-chmod +x ~/.config/eww/
+chmod +x ~/.config/eww/*
 ```
 
 ~~i don't know exactly if this works, but it's supposed to work~~
