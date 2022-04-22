@@ -86,6 +86,9 @@ MIT license, see license file.
 ## thanks and credits 💙
 
 [saimoomedits](https://github.com/saimoomedits) for help me a lot with all! <3
+
 [elenapan](https://github.com/elenapan) for made the bunnyfetch!
+
 [AlphaTechnolog](https://github.com/AlphaTechnolog) for help me with eww scripts!
+
 [torvalds](https://github.com/torvalds) for add [uwu](https://github.com/justleoo/dotfiles/blob/main/uwu) file uwu
