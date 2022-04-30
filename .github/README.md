@@ -1,5 +1,5 @@
 <div align="center">
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=32&lines=dotfiles)](https://git.io/typing-svg)
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&lines=dotfiles"/>
 </div>
 <br>
 
@@ -49,6 +49,7 @@ chmod +x ~/.config/eww/*
 
 <details>
    <summary><strong>void linux</strong></summary>
+
 ### work in progress.
 </details>
 
