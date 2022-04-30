@@ -60,13 +60,13 @@ chmod +x ~/.config/eww/*
 
   | key | what this do? |
   | ----------- | ----------- |
-  | `super + enter` | open terminal (i use alacritty, but you can change it) |
-  | `super + r` | open rofi (app launcher) |
-  | `super + f` | open firefox (browser) |
-  | `super + p` | open flameshot |
-  | `super + c` | restart bspwm |
-  | `super + alt + q` | quit bspwm |
-  | `super + q` | close and kill a window |
+  | <kbd>super + enter</kbd> | open terminal (i use alacritty, but you can change it) |
+  | <kbd>super + r</kbd> | open rofi (app launcher) |
+  | <kbd>super + f</kbd> | open firefox (browser) |
+  | <kbd>super + p</kbd> | open flameshot |
+  | <kbd>super + c</kbd> | restart bspwm |
+  | <kbd>super + alt + q</kbd> | quit bspwm |
+  | <kbd>super + q</kbd> | close and kill a window |
 
 </details>
 
