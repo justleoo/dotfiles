@@ -1,5 +1,4 @@
 (deflisten workspace "scripts/workspaces")
-(defvar IMAGE "../images/music.png")
 
 ;; workspaces
 (defwidget workspaces []
@@ -9,11 +8,11 @@
 ;; profile widget
 (defwidget profile []
   (box :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false"
-  (button :class "profile_class" :style "background-image: url('${IMAGE}');" :onclick "$HOME/.config/eww/bar/scripts/music" " ")))
+  (button :class "profile_class" :onclick "$HOME/.config/eww/bar/scripts/music" "")))
 ; time widget
 (defwidget time []
-    (box    :orientation "v" 
-            :class "time" 
+    (box    :orientation "v"
+            :class "time"
             :valign "end"
             :halign "center"
     (button    :class "time-hour" hour)
@@ -24,9 +23,9 @@
 
 ;; bottom widgets
 (defwidget bottom []
-    (box    :orientation "v" 
-            :space-evenly false 
-            :valign "end" 
+    (box    :orientation "v"
+            :space-evenly false
+            :valign "end"
             :spacing 5
 (time)))
 
@@ -34,8 +33,8 @@
 
 ;; center widgets
 (defwidget center []
-    (box :orientation "h" 
-         :space-evenly false  
+    (box :orientation "h"
+         :space-evenly false
          :halign "center"
          :class "right_modules"
          :valign "center"
@@ -45,8 +44,8 @@
 
 ;; top widgets
 (defwidget top []
-    (box :orientation "v" 
-         :space-evenly false  
+    (box :orientation "v"
+         :space-evenly false
 (profile)))
 
 
@@ -72,4 +71,3 @@
           :stacking "fg"
           :windowtype "dock"
   (bar_1))
-

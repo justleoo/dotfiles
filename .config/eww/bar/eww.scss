@@ -1,7 +1,7 @@
 * {
     all: unset;
     font-family: feather;
-    font-family: Iosevka Nerd Font; 
+    font-family: Iosevka Nerd Font;
   }
 
 /** workspace shit **/
@@ -40,6 +40,8 @@ color: #3e424f;
 .profile_class {
 	background-size: cover;	
 	background-position: center;
+ 	font-size: 1.5em;
+	color: #96d6b0;
 	min-height: 30px;
 	min-width: 24px;
 	margin: 10px;
@@ -58,4 +60,3 @@ color: #3e424f;
   margin: 0px 0px 10px 0px;
   color: #f4f4f4;
 }
-

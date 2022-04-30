@@ -1,0 +1,31 @@
+colors:
+  # Default colors
+  primary:
+    background: '#0f0f17'
+    foreground: '#bfc9db'
+
+  # Normal colors
+  normal:
+    black:   '#1a1826'
+    red:     '#d78787'
+    green:   '#afbea2'
+    yellow:  '#e4c9af'
+    blue:    '#a1bdce'
+    magenta: '#c98bbf'
+    cyan:    '#a1bdce'
+    white:   '#b1b9c7'
+
+  # Bright colors
+  bright:
+    black:   '0x988BA2'
+    red:     '0xF28FAD'
+    green:   '0xABE9B3'
+    yellow:  '0xFAE3B0'
+    blue:    '0x96CDFB'
+    magenta: '0xF5C2E7'
+    cyan:    '0x89DCEB'
+    white:   '#d2d3c9'
+
+  indexed_colors:
+    - { index: 16, color: '#e0b089' }
+    - { index: 17, color: '#bfc9db' }

@@ -10,15 +10,17 @@ welcome to my dotfiles, have a good time enjoying and ricing! 🌺
 - notification system: [dunst](https://github.com/dunst-project/dunst)
 - shell: [zsh](https://ohmyz.sh)
 - GTK theme: [levuaska](https://github.com/saimoomedits/levuaska/tree/main/.themes/levuaska)
-- OS: [arch](https://archlinux.org)
+- OS: [Void](https://voidlinux.org)
 - keybinding handler: [sxhkd](https://github.com/baskerville/sxhkd)
 - bar and widgets: [eww](https://github.com/elkowar/eww)
-- terminal: [tym](https://github.com/endaaman/tym)
+- terminal: [alacritty](https://github.com/alacritty/alacritty)
 - app launcher: [rofi](https://github.com/davatorium/rofi)
 - compositor: [picom](https://github.com/yshui/picom)
 - fetches: [skyfetch](https://github.com/justleoo/skyfetch), [bunnyfetch](https://github.com/elenapan/dotfiles/blob/master/bin/bunnyfetch)
 
 ## eww notes
+
+my eww binary is for void linux, dont work in other distros.
 
 i made a script to open and close eww widgets with my friend, see this in `~/.scripts/dash`, options of script:
 
@@ -32,7 +34,7 @@ i made a script to open and close eww widgets with my friend, see this in `~/.sc
 
   | key | what this do? |
   | ----------- | ----------- |
-  | `super + enter` | open terminal (i use tym, but you can change it) |
+  | `super + enter` | open terminal (i use alacritty, but you can change it) |
   | `super + r` | open rofi (app launcher) |
   | `super + f` | open firefox (browser) |
   | `super + p` | open flameshot |
@@ -74,6 +76,7 @@ chmod +x ~/.config/eww/*
 ## showcase 
 
 <img src="showcase/rice.png"/>
+<img src="showcase/ricee.png"/>
 
 ## thank you!
 
