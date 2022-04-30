@@ -53,7 +53,7 @@ chmod +x ~/.config/eww/*
 ### work in progress.
 </details>
 
-## after installing, to open apps you need to see the keys, or even change them in `~/.config/sxhkd/sxhkrc`
+#### after installing, to open apps you need to see the keys, or even change them in `~/.config/sxhkd/sxhkrc`
 
 <details>
   <summary><strong>basic keys</strong></summary>
