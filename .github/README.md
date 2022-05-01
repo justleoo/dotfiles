@@ -6,6 +6,7 @@
 ## :herb: about
 
 <img src="assets/showcase.png" alt="rice" align="right" width="400px">
+<img src="assets/showcase2.png" alt="rice" align="right" width="400px">
 
 - os: [Void Linux](https://voidlinux.org)
 - wm: [bspwm](https://github.com/baskerville/bspwm)
@@ -77,7 +78,7 @@ chmod +x ~/.config/eww/*
 
 ## license 📜
 
-MIT license, see license file.
+MIT license, see [license](https://github.com/justleoo/dotfiles/blob/main/LICENSE) file.
 
 ## thanks and credits 💙
 

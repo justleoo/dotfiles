@@ -8,8 +8,9 @@
 ;; profile widget
 (defwidget profile []
   (box :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false"
-  (button :class "profile_class" :onclick "$HOME/.config/eww/bar/scripts/music" "")))
-; time widget
+  (button :class "profile_class" :onclick "poweroff" "")))
+
+;; time widget
 (defwidget time []
     (box    :orientation "v"
             :class "time"
@@ -28,8 +29,6 @@
             :valign "end"
             :spacing 5
 (time)))
-
-
 
 ;; center widgets
 (defwidget center []

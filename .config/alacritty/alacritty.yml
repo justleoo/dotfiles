@@ -29,3 +29,12 @@ colors:
   indexed_colors:
     - { index: 16, color: '#e0b089' }
     - { index: 17, color: '#bfc9db' }
+
+font:
+  bold:
+    family: Iosevka Nerd Font
+  italic:
+    family: Iosevka Nerd Font
+  normal:
+    family: Iosevka Nerd Font
+  size: 11
