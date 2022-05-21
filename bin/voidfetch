@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+# fetch by @justleoo on github
+
+GREEN="\x1B[32m"
+YELLOW="\x1B[33m"
+YELLOW_BRIGHT="\x1B[93m"
+BLUE="\x1B[34m"
+CYAN="\033[36m"
+RED="\033[1;31m"
+WHITE="\x1B[37m"
+BOLD="\x1B[1m"
+RESET="\x1B[0m"
+
+user=$(whoami)
+hostname=$HOSTNAME
+wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d ")"
+init="$(cut -d ' ' -f 1 /proc/1/comm)"
+shell=$(basename $SHELL)
+pkgs="$(xbps-query -l | wc -l)"
+os=$(grep -m1 "NAME=" < /etc/os-release | cut -d '"' -f 2)
+mem=$(free --mega | awk 'NR == 2 { print $3" / "$2" MB" }')
+
+echo -e "
+${GREEN}    ▄▄▄▄▄▄    ${RESET}  ${RED}${user}${RESET}@${RED}${hostname}${RESET}
+${GREEN} ▄ ▀███████▄  ${RESET}  ${GREEN}os${RESET}   ~ ${BOLD}enter the void!
+${GREEN}███  ▄▄▄ ▀███ ${RESET}  ${YELLOW_BRIGHT}wm${RESET}   ~ ${BOLD}${wmname}
+${GREEN}███ █████ ███  ${RESET} ${BLUE}init${RESET} ~ ${BOLD}${init}
+${GREEN}███ ▀███▀ ███  ${RESET} ${RED}sh${RESET}   ~ ${BOLD}${shell}
+${GREEN}████▄▄▄▄▄ ▀██  ${RESET} ${YELLOW}pkgs${RESET} ~ ${BOLD}${pkgs}
+${GREEN} ▀███████▀     ${RESET} ${CYAN}mem${RESET}  ~ ${BOLD}${mem}\n
+"

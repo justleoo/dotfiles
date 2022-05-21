@@ -1,0 +1,20 @@
+;; clock widget
+(defwidget time []
+    (box    :orientation "v"
+            :class "time"
+            :valign "end"
+            :halign "center"
+    (button    :class "time-hour" hour)
+    (button    :class "time-min"  min)))
+(defpoll hour    :interval "1s"    "date '+%H'")
+(defpoll min    :interval "1s"    "date '+%M'")
+
+;; void symbol
+(defwidget void []
+  (box :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false"
+  (button :class "void" :onclick "rofi -show run" "")))
+
+;; quit bspwm
+(defwidget quit []
+  (box :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false"
+  (button :class "quit" :onclick "pkill bspwm" "")))

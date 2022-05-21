@@ -1,0 +1,15 @@
+super + Return
+	alacritty
+super + r
+	rofi -show run
+super + p
+	flameshot gui
+# bspwm hotkeys
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {_,shift + }{1-6,0}
+	bspc {desktop -f,node -d} '^{1-6,10}'
+super + q
+	bspc node -{c,k}
+super + alt + q
+	bspc {quit,wm -r}

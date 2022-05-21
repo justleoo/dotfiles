@@ -1,9 +1,8 @@
-# zsh prompt
+export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME=""
 prompt default &> /dev/null
-PROMPT='%F{green}  %F{magenta}%1~%f %F{yellow}❱%F{green}❱%F{blue}❱ %f'
+PROMPT='%F{green}  %F{yellow}%1~%f %F{blue}❱ %f'
 
-# config
-export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
