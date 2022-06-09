@@ -1,10 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "      ___     "
-echo "     (.· |    "
-echo "     (<> |    "
-echo "    / __  \   "
-echo "   ( /  \ /|  "
-echo "  _/\ __)/_)  "
-echo "  \/-____\/   "
-echo ""
+cat << EOF
+      ___
+     (.· |
+     (<> |
+    / __  \\
+   ( /  \ /
+  _/\ __)/_)
+  \/-____\/
+
+EOF
