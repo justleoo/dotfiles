@@ -14,14 +14,14 @@ RESET="\x1B[0m"
 
 user=$(whoami)
 hostname=$HOSTNAME
-wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d ")"
-init="$(cut -d ' ' -f 1 /proc/1/comm)"
+wmname=$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep 'WM_NAME' | cut -f2 -d \")
+init=$(cut -d ' ' -f 1 /proc/1/comm)
 shell=$(basename $SHELL)
-pkgs="$(xbps-query -l | wc -l)"
+pkgs=$(xbps-query -l | wc -l)
 os=$(grep -m1 "NAME=" < /etc/os-release | cut -d '"' -f 2)
 mem=$(free --mega | awk 'NR == 2 { print $3" / "$2" MB" }')
 
-echo -e "
+printf "
 ${GREEN}    ▄▄▄▄▄▄    ${RESET}  ${RED}${user}${RESET}@${RED}${hostname}${RESET}
 ${GREEN} ▄ ▀███████▄  ${RESET}  ${GREEN}os${RESET}   ~ ${BOLD}enter the void!
 ${GREEN}███  ▄▄▄ ▀███ ${RESET}  ${YELLOW_BRIGHT}wm${RESET}   ~ ${BOLD}${wmname}
