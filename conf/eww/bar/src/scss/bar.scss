@@ -1,6 +1,12 @@
-$bg: #0f0f17;
+$bg: #0b0d10; 
+
+* {
+  all: unset;
+  font-family: feather;
+  font-family: Iosevka Nerd Font;
+}
 
 .bar {
   background-color: $bg;
-  border-radius: 15px;
+  border-radius: 16px;
 }

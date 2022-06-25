@@ -1,8 +1,13 @@
+$bg: #0b0d10;
+$fg: #d2daf4; 
+$gray: #636c7e;
+
+
 .works {
-font-size: 16px;
-font-weight: normal;
-margin: 0px 0px 0px 10px;
-background-color: #0f0f17;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px 0px 0px 10px;
+  background-color: $bg;
 }
 
 .0 , .01, .02, .03, .04, .05, .06,
@@ -10,17 +15,14 @@ background-color: #0f0f17;
   margin: 0px 10px 0px 0px;
 }
 
-/* Unoccupied */
 .0 {
-color: #3e424f;
+color: $gray;
 }
 
-/* Occupied */
 .01, .02, .03, .04, .05, .06 {
-  color: #bfc9db;
+  color: $fg; 
 }
 
-/* Focused */
 .011, .022, .033, .044, .055, .066 {
-  color: #a1bdce;
+  color: $fg; 
 }

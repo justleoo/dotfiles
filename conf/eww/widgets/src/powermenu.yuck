@@ -1,0 +1,38 @@
+(defwidget poweroff []
+    (button :onclick "sudo poweroff"
+    (box :orientation "v" :space-evenly "false" :tooltip "Poweroff" :class "square-button"
+          (box :class "poweroff" "")
+        )
+    )
+)
+
+(defwidget quit []
+    (button :onclick "pkill bspwm"
+    (box :orientation "v" :space-evenly "false" :tooltip "Quit BSPWM" :class "square-button"
+          (box :class "quit" "")
+        )
+    )
+)
+
+(defwidget res []
+    (button :onclick "bspc wm -r"
+    (box :orientation "v" :space-evenly "false" :tooltip "Restart BSPWM" :class "square-button"
+          (box :class "res" "ﰇ")
+        )
+    )
+)
+
+(defwindow poweroff 
+			    :geometry (geometry :x "70px" :y "110px" :width "50px" :height "50px")
+	(poweroff)
+)
+
+(defwindow quit
+			    :geometry (geometry :x "135px" :y "110px" :width "50px" :height "50px")
+	(quit)
+)
+
+(defwindow res
+          :geometry (geometry :x "200px" :y "110px" :width "50px" :height "50px")
+  (res)
+)

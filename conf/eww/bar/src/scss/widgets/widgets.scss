@@ -1,30 +1,35 @@
-$fg: #bfc9db;
-$red: #d78787;
-$green: #afbea2;
+$green: #3fcc6c;
+$red: #e15858;
+$black: #151a1c;
+$fg: #d2daf4;
+$bg: #0b0d10;
+
+tooltip {
+  margin: 10px;
+  background-color: $bg;
+}
+
+.void {
+  font-size: 1.5em;
+  color: $green;
+  margin: 10px;
+}
+
+.powermenu {
+    font-size: 1.2em;
+    color: $red;
+    margin: 10px;
+}
 
 .time {
   font-family: Iosevka Nerd Font;
   font-weight: bold;
   font-size: 1.2em;
-  background-color: #13141c; 
   color: $fg;
   border-radius: 5px;
-  padding: .9rem 0 .5rem 0;
   margin: .5rem 0 .5rem 0;
   padding-top: .9rem;
-  padding-right: .5rem;
-  padding-bottom: .5rem;
-  padding-left: .5rem;
-}
-
-.void {
-  font-size: 1.5em;
-	color: $green;
-	margin: 10px;
-}
-
-.quit {
-  font-size: 1.5em;
-  color: $red;
-  margin: -5px;
+  padding-right: .6rem;
+  padding-bottom: .9rem;
+  padding-left: .6rem;
 }

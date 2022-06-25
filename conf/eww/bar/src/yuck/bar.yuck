@@ -1,42 +1,36 @@
 (defwidget top []
     (box :orientation "v"
     :space-evenly false
-(void)
-))
+  (void)
+  (workspaces)
+  )
+)
 
-(defwidget bottom []
+  (defwidget bottom []
     (box    :orientation "v"
             :space-evenly false
             :valign "end"
-            :spacing 5
-(quit)
-(time)
-))
-
-(defwidget center []
-    (box :orientation "h"
-         :space-evenly false
-         :halign "center"
-         :class "right_modules"
-         :valign "center"
-(workspaces)))
+  (time)
+  )
+)
 
 (defwidget bar_1 []
   (box :class "bar"
        :orientation "v"
            :hexpand "false"
            :vexpand "false"
-  (top)
-  (center)
-  (bottom)
-  ))
+           (top)
+           (time)
+    )
+  )
 
   (defwindow bar
           :geometry (geometry :x "5px"
                        :y "0px"
                        :width "50px"
-                       :height "95%"
+                       :height "99%"
                        :anchor "left center")
           :stacking "fg"
           :windowtype "dock"
-  (bar_1))
+  (bar_1)
+)

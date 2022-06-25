@@ -1,0 +1,15 @@
+@import "date.scss";
+@import "powermenu.scss";
+
+$bg: #0b0d10;
+
+* {
+  all: unset;
+  background-color: $bg;
+  font-family: Iosevka Nerd Font;
+}
+
+tooltip {
+  margin: 10px;
+  background-color: $bg;
+}

@@ -1,0 +1,10 @@
+(defwidget date []
+(box :orientation "v" :space-evenly "false" :class "date-box"
+        (label :text {date} :class "date-text" :tooltip "Date" :limit-width 20)
+    ))
+
+(defpoll date :interval "1s"  "date '+%d/%m/%Y'")
+
+(defwindow date 
+			    :geometry (geometry :x "70px" :y "10px" :width "180px" :height "86px")
+		(date))

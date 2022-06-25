@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # fetch by @justleoo on github
 
@@ -24,9 +24,9 @@ mem=$(free --mega | awk 'NR == 2 { print $3" / "$2" MB" }')
 printf "
 ${GREEN}    ▄▄▄▄▄▄    ${RESET}  ${RED}${user}${RESET}@${RED}${hostname}${RESET}
 ${GREEN} ▄ ▀███████▄  ${RESET}  ${GREEN}os${RESET}   ~ ${BOLD}enter the void!
-${GREEN}███  ▄▄▄ ▀███ ${RESET}  ${YELLOW_BRIGHT}wm${RESET}   ~ ${BOLD}${wmname}
-${GREEN}███ █████ ███  ${RESET} ${BLUE}init${RESET} ~ ${BOLD}${init}
-${GREEN}███ ▀███▀ ███  ${RESET} ${RED}sh${RESET}   ~ ${BOLD}${shell}
+${GREEN}███  ${WHITE}▄▄▄${RESET} ${GREEN}▀███ ${RESET}  ${YELLOW_BRIGHT}wm${RESET}   ~ ${BOLD}${wmname}
+${GREEN}███ ${WHITE}█████${RESET} ${GREEN}███  ${RESET} ${BLUE}init${RESET} ~ ${BOLD}${init}
+${GREEN}███ ${WHITE}▀███▀${RESET} ${GREEN}███  ${RESET} ${RED}sh${RESET}   ~ ${BOLD}${shell}
 ${GREEN}████▄▄▄▄▄ ▀██  ${RESET} ${YELLOW}pkgs${RESET} ~ ${BOLD}${pkgs}
 ${GREEN} ▀███████▀     ${RESET} ${CYAN}mem${RESET}  ~ ${BOLD}${mem}\n
 "

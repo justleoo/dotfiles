@@ -1,0 +1,23 @@
+$red: #c44949; 
+$green: #3fcc6c;
+$yellow: #dfa93f;
+
+.poweroff {
+  color: $red;
+  font-size: 20px;
+}
+
+.quit {
+  color: $green;
+  font-size: 20px;
+}
+
+.res {
+  color: $yellow;
+  font-size: 20px;
+}
+
+.square-button {
+  margin: 17px;
+  font-size: 25px;
+}

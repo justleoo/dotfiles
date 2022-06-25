@@ -1,3 +1,5 @@
+window:
+    opacity: 0.5
 import:
 - ~/.config/alacritty/theme.yml
 window:
@@ -7,7 +9,7 @@ class:
   general: alacritty
 
 shell:
-  program: /usr/bin/zsh
+  program: /usr/bin/hilbish
 
 window:
   padding:
