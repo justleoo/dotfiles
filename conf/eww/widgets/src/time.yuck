@@ -1,0 +1,12 @@
+(defwidget time []
+    (box :orientation "v" :space-evenly "false" :class "hour-box"
+        (label :text {hour} :class "hour-text" :tooltip "Hour" :limit-width 20)
+        (label :text {minute} :class "minute-text" :limit-width 20)
+))
+
+(defpoll hour :interval "1s"  "date '+%H'")
+(defpoll minute :interval "1s"  "date '+%M'")
+
+(defwindow time 
+			    :geometry (geometry :x "270px" :y "10px" :width "150px" :height "130px")
+			     				(time))

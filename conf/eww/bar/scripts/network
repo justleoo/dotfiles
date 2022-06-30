@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-[ $(cat /sys/class/net/enp3s0/operstate) = down ] && echo 睊  && exit
-echo 

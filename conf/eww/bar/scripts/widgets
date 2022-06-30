@@ -13,6 +13,7 @@ run_eww() {
     ${EWW} open poweroff
     ${EWW} open res
     ${EWW} open quit
+    ${EWW} open time
 }
 
 if [[ ! -f "$FILE" ]]; then
@@ -23,5 +24,6 @@ else
     ${EWW} close poweroff
     ${EWW} close res
     ${EWW} close quit
+    ${EWW} close time
     rm "$FILE"
 fi
