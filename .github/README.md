@@ -76,7 +76,7 @@ $ cargo build --release -j $(nproc)
 now move the binary to `/usr/bin` and give permissions:
 
 ```sh-session
-$ sudo mv target/release/eww /usr/bin/eww && sudo chmod +x /usr/bin/eww
+$ sudo mv target/release/eww /usr/bin/ && sudo chmod +x /usr/bin/eww
 ```
 
 and finally done the installation of eww! 🌌 
@@ -86,7 +86,7 @@ and finally done the installation of eww! 🌌
 on arch linux:
 
 ```sh-session
-$ yay -S alacritty sxhkd hilbish rofi ninja gcc meson
+$ yay -S alacritty sxhkd hilbish rofi ninja gcc meson go
 ```
 
 on void:
