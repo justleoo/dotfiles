@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 bspc monitor -d 1 2 3 4 5 6
 bspc config border_width         0

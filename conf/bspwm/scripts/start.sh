@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 function script() {
   $HOME/.config/bspwm/scripts/${@} &
