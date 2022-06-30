@@ -181,6 +181,20 @@ $ chmod +x ~/.config/eww/bar/scripts/*
 
 have a good time enjoying and ricing! :heart:
 
+## gallery 
+
+a simple bar!
+
+<img src="assets/bar.png">
+
+eww widgets 
+
+<img src="assets/widgets.png">
+
+picom animations
+
+<img src="assets/picom.gif">
+
 ## credits
 
 [Syndrizzle](https://github.com/Syndrizzle/hotfiles) for readme inspiration
