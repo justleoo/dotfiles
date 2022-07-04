@@ -1,1 +1,4 @@
 
+[submodule "etc/firefox"]
+	path = etc/firefox
+	url = https://github.com/itsook/firefox
