@@ -1,11 +1,6 @@
-[submodule "etc/gtk3"]
-	path = etc/gtk3
-	url = https://github.com/itsook/gtk3
-
-[submodule "conf/nvim"]
-	path = conf/nvim
-	url = https://github.com/justleoo/kia
-
 [submodule "etc/firefox"]
 	path = etc/firefox
+	url = https://github.com/itsook/firefox
+[submodule "firefox"]
+	path = firefox
 	url = https://github.com/itsook/firefox
