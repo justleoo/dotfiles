@@ -2,3 +2,6 @@
 [submodule "etc/firefox"]
 	path = etc/firefox
 	url = https://github.com/itsook/firefox
+[submodule "etc/nvim"]
+	path = etc/nvim
+	url = https://github.com/justleoo/kia
