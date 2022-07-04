@@ -1,6 +1,1 @@
-[submodule "etc/firefox"]
-	path = etc/firefox
-	url = https://github.com/itsook/firefox
-[submodule "firefox"]
-	path = firefox
-	url = https://github.com/itsook/firefox
+
