@@ -9,6 +9,7 @@ hello, thanks for visiting :heart:! if you like this [rice](https://thatnixguy.g
 ## about
 
 <img src="assets/showcase.png" alt="rice" align="right" width="400px">
+<img src="assets/showcase.png" alt="rice" align="right" width="400px">
 
 - OS [Void](https://voidlinux.org) simple, light and amazing 👽
 - WM [bspwm](https://github.com/baskerville/bspwm) simple and good window manager 🪟
@@ -18,6 +19,7 @@ hello, thanks for visiting :heart:! if you like this [rice](https://thatnixguy.g
 - shell [hilbish](https://github.com/rosettea/hilbish) the flower shell 🌺
 - theme [ok-theme](https://github.com/itsook/ok-theme) dark and beautiful 🌌 
 - editor [neovim](https://github.com/neovim) fast, simple and amazing! 👾
+- menu [jgmenu](https://jgmenu.github.io/) fast, cool and simple to configure! ✨
 
 ## installation 
 
@@ -86,13 +88,13 @@ and finally done the installation of eww! 🌌
 on arch linux:
 
 ```sh-session
-$ yay -S alacritty sxhkd hilbish rofi ninja gcc meson go
+$ yay -S alacritty sxhkd hilbish rofi ninja gcc meson go jgmenu
 ```
 
 on void:
 
 ```sh-session
-$ xbps-install -S alacritty sxhkd rofi ninja gcc meson go
+$ xbps-install -S alacritty sxhkd rofi ninja gcc meson go jgmenu
 ```
 
 on void, fedora and ubuntu you need to compile hilbish manually: 
@@ -108,13 +110,13 @@ $ sudo make install
 on fedora: 
 
 ```sh-session
-$ dnf install sxhkd alacritty rofi ninja gcc meson go
+$ dnf install sxhkd alacritty rofi ninja gcc meson go jgmenu
 ```
 
 on ubuntu:
 
 ```sh-session
-$ apt install sxhkd rofi ninja gcc meson go
+$ apt install sxhkd rofi ninja gcc meson go jgmenu
 ```
 
 to install alacritty in ubuntu you need run this:
@@ -202,6 +204,8 @@ picom animations
 [saimoomedits](https://github.com/saimoomedits/dotfiles) for help me a lot with all!
 
 [AlphaTechnolog](https://github.com/alphatechnolog) for help me with picom and more
+
+[janleigh](https://github.com/janleigh) for jgmenu config!
 
 and you! of course.
 
