@@ -34,8 +34,13 @@ on arch linux:
 ```sh-session
 $ yay -S bspwm
 ```
-
 (you can use another aur helper)
+
+on gentoo:
+
+```sh-session
+$ emerge bspwm
+```
 
 on ubuntu or debian:
 
@@ -87,6 +92,12 @@ on arch linux:
 
 ```sh-session
 $ yay -S alacritty sxhkd hilbish rofi ninja gcc meson go
+```
+
+on gentoo:
+
+```sh-session
+$ emerge alacritty sxhkd rofi ninja gcc meson go
 ```
 
 on void:
