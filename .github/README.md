@@ -99,6 +99,15 @@ on gentoo:
 ```sh-session
 $ emerge alacritty sxhkd rofi ninja gcc meson go
 ```
+installing jgmenu on gentoo:
+
+```sh-session
+$ git clone https://github.com/johanmalm/jgmenu.git
+$ cd jgmenu
+$ ./configure
+$ make
+$ sudo make install
+```
 
 on void:
 
