@@ -36,8 +36,13 @@ on arch linux:
 ```sh-session
 $ yay -S bspwm
 ```
-
 (you can use another aur helper)
+
+on gentoo:
+
+```sh-session
+$ emerge bspwm
+```
 
 on ubuntu or debian:
 
@@ -89,6 +94,21 @@ on arch linux:
 
 ```sh-session
 $ yay -S alacritty sxhkd hilbish rofi ninja gcc meson go jgmenu
+```
+
+on gentoo:
+
+```sh-session
+$ emerge alacritty sxhkd rofi ninja gcc meson go
+```
+installing jgmenu on gentoo:
+
+```sh-session
+$ git clone https://github.com/johanmalm/jgmenu.git
+$ cd jgmenu
+$ ./configure
+$ make
+$ sudo make install
 ```
 
 on void:
