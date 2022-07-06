@@ -9,7 +9,7 @@ hello, thanks for visiting :heart:! if you like this [rice](https://thatnixguy.g
 ## about
 
 <img src="assets/showcase.png" alt="rice" align="right" width="400px">
-<img src="assets/showcase.png" alt="rice" align="right" width="400px">
+<img src="assets/showcase2.png" alt="rice" align="right" width="400px">
 
 - OS [Void](https://voidlinux.org) simple, light and amazing 👽
 - WM [bspwm](https://github.com/baskerville/bspwm) simple and good window manager 🪟
