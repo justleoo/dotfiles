@@ -231,4 +231,4 @@ and you! of course.
 
 ## license
 
-MIT License. see [LICENSE](https://github.com/justleoo/dotfiles/blob/main/LICENSE) file.
+MIT License. see [LICENSE](https://github.com/justleoo/dotfiles/blob/bspwm/LICENSE) file.
