@@ -23,19 +23,19 @@ install packages:
 on arch:
 
 ```sh-session
-$ paru -S sway waybar foot 
+$ paru -S sway waybar foot wofi
 ```
 
 on void:
 
 ```sh-session
-$ xbps-install -S sway Waybar foot
+$ xbps-install -S sway Waybar foot wofi
 ```
 
 on fedora
 
 ```sh-session
-$ dnf install sway waybar foot
+$ dnf install sway waybar foot wofi
 ```
 
 ## clone the files
@@ -55,6 +55,16 @@ $ mv conf/sway/ ~/.config/
 ## running sway
 
 so, finally! how run sway? i don't recommend you to use sway if you use NVIDIA, you can get a lot of errors (i use nvidia, and it took me a while to get the sway working), to run sway, try to just run in your tty `sway`, or `WLR_NO_HARDWARE_CURSORS=1 sway`.
+
+## keys 🔑
+
+| key | action |
+|------|-------|
+|<kbd>super + enter</kbd>| open foot|
+|<kbd>super + r</kbd>| open wofi|
+|<kbd>super + e</kbd>|enter resize mode (use the right, left, up and down arrow keys to use this mode working)|
+|<kbd>super + [1-0]</kbd>|go to workspaces|
+|<kbd>super + q</kbd>|close a window|
 
 ## thanks
 
