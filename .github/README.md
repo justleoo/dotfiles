@@ -196,7 +196,14 @@ and done, picom fork installed!
 
 ```sh-session
 $ git clone https://github.com/justleoo/dotfiles/ && cd dotfiles
-$ mv conf/ ~/.config/
+$ git checkout bspwm
+$ mv conf/bspwm ~/.config/
+$ mv conf/eww ~/.config/
+$ mv conf/jgmenu ~/.config/
+$ mv conf/hilbish ~/.config/
+$ mv conf/alacritty ~/.config/
+$ mv conf/picom ~/.config/
+$ mv conf/sxhkd ~/.config/
 $ chmod +x ~/.config/bspwm/*
 $ chmod +x ~/.config/eww/bar/scripts/*
 ```
