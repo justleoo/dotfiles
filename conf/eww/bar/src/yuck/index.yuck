@@ -1,3 +1,0 @@
-(include "src/yuck/bar.yuck")
-(include "src/yuck/workspaces.yuck")
-(include "src/yuck/widgets/widgets.yuck")

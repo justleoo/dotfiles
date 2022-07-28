@@ -1,3 +1,0 @@
-(include "src/date.yuck")
-(include "src/powermenu.yuck")
-(include "src/time.yuck")
