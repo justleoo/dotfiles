@@ -1,0 +1,39 @@
+{
+    "position": "left",
+    "modules-left": ["custom/ghost","sway/workspaces"],
+    "modules-right": ["clock", "custom/power"],
+    "sway/workspaces": {
+    	"all-outputs": true,
+	"format": "{icon}",
+	"format-icons": {
+             	"1": "一",
+             	"2": "二",
+        	"3": "三",
+             	"4": "四",
+             	"5": "五",
+        	"6": "六",
+        	"7": "七",
+             	"8": "八",
+        	"9": "九",
+             	"10": "〇"
+         },
+	"persistent_workspaces": {
+	   "1": [],
+	   "2": [],
+	   "3": [],
+	   "4": [],
+	   "5": []
+	}
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "loginctl poweroff"
+    },
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+    "custom/ghost": {
+	"format": ""
+    }
+}
