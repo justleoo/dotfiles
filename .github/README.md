@@ -54,7 +54,7 @@ $ mv conf/sway/ ~/.config/
 
 ## running sway
 
-so, finally! how run sway? i don't recommend you to use sway if you use NVIDIA, you can get a lot of errors (i use nvidia, and it took me a while to get the sway working), to run sway, try to just run in your tty `sway`, or `WLR_NO_HARDWARE_CURSORS=1 sway`.
+so, finally! how run sway? try to just run in your tty `sway`, or `WLR_NO_HARDWARE_CURSORS=1 sway`.
 
 ## keys 🔑
 
