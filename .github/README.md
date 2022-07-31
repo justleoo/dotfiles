@@ -64,7 +64,7 @@ a simple and beautiful bar
 
 foot terminal with a beautiful bash prompt
 
-<img src="prompt_and_terminal.png">
+<img src="assets/prompt_and_terminal.png">
 
 ## keys 🔑
 
