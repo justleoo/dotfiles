@@ -68,6 +68,8 @@ so, finally! how run sway? try to just run in your tty `sway`, or `WLR_NO_HARDWA
 
 ## thanks
 
+[siduck](https://github.com/siduck)
+
 [AlphaTechnolog](https://github.com/alphatechnolog) 
 
 ## license

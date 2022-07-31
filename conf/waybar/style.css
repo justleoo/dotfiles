@@ -14,10 +14,8 @@ margin: 10px;
 }
 
 #workspaces button {
-	font-family: Iosevka Nerd Font;
   color: #dadada;
-  padding: 3px 7px;
-  font-size: 15px;
+   padding: 2px 7px;
 }
 
 #workspaces button:hover {
@@ -35,7 +33,7 @@ margin: 10px;
     border-radius: 10px;
     padding: 10px 0px;
     margin: 0px 10px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 #clock {
@@ -44,11 +42,31 @@ margin: 10px;
     margin-bottom: 8px;
 }
 
-#custom-ghost {
+#custom-void {
+    color: #141b1e;
+    background-color: #8ccf7e;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10 0px;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+#custom-separator {
+    color: #dadada; 
+}
+
+#memory {
+    color: #dadada;
+    font-size: 17px;
+}
+
+#custom-wofi {
     border-radius: 50px;
     margin: 10px;
     font-size:17px;
     padding: 7px;
-    background-color: #67b0e8;
-    color: #141b1e;
+    background-color: #232a2d;
+    color: #dadada;
 }

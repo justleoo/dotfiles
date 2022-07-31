@@ -1,22 +1,10 @@
 {
     "position": "left",
-    "modules-left": ["custom/ghost","sway/workspaces"],
-    "modules-right": ["clock", "custom/power"],
+    "modules-left": ["custom/void","sway/workspaces"],
+    "modules-right": ["memory", "custom/wofi", "custom/separator", "clock", "custom/power"],
     "sway/workspaces": {
     	"all-outputs": true,
-	"format": "{icon}",
-	"format-icons": {
-             	"1": "一",
-             	"2": "二",
-        	"3": "三",
-             	"4": "四",
-             	"5": "五",
-        	"6": "六",
-        	"7": "七",
-             	"8": "八",
-        	"9": "九",
-             	"10": "〇"
-         },
+	"format": "",
 	"persistent_workspaces": {
 	   "1": [],
 	   "2": [],
@@ -33,7 +21,18 @@
         "format": "{:%H\n%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
-    "custom/ghost": {
-	"format": ""
+    "custom/void": {
+	"format": "",
+	"on-click": "wofi --show run"
+    },
+    "custom/separator": {
+	"format": "———"
+    },
+    "memory": {
+	"format": "{}%"
+    },
+    "custom/wofi": {
+	"format": "",
+	"on-click": "wofi --show run"
     }
 }
