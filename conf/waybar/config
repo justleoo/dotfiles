@@ -26,7 +26,7 @@
 	"on-click": "wofi --show run"
     },
     "custom/separator": {
-	"format": "———"
+	"format": "──────"
     },
     "memory": {
 	"format": "{}%"
