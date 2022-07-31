@@ -56,6 +56,16 @@ $ mv conf/sway/ ~/.config/
 
 so, finally! how run sway? try to just run in your tty `sway`, or `WLR_NO_HARDWARE_CURSORS=1 sway`.
 
+## gallery 🧩
+
+a simple and beautiful bar
+
+<img src="assets/bar.png">
+
+foot terminal with a beautiful bash prompt
+
+<img src="prompt_and_terminal.png">
+
 ## keys 🔑
 
 | key | action |
