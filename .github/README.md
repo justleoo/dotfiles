@@ -82,6 +82,8 @@ foot terminal with a beautiful bash prompt
 
 [AlphaTechnolog](https://github.com/alphatechnolog) 
 
+[saimoomedits](https://github.com/saimoomedits)
+
 ## license
 
 see [LICENSE](https://github.com/justleoo/dotfiles/blob/sway/LICENSE) file.
