@@ -1,0 +1,26 @@
+#!/bin/sh
+
+outer='0x0d1417'   # outer
+inner1='0x232a2d'  # focused
+inner2='0x232a2d'  # normal
+
+trap 'bspc config border_width 0; kill -9 -$$' INT TERM
+
+targets() {
+     case $1 in
+        focused) bspc query -N -n .local.focused.\!fullscreen;;
+        normal)  bspc query -N -n .local.\!focused.\!fullscreen
+    esac | grep -iv "$v"
+}
+
+bspc config border_width 14
+
+draw() { chwb2 -I "$inner" -O "$outer" -i "4" -o "9" $* |:; }
+
+# initial draw, and then subscribe to events
+{ echo; bspc subscribe node_geometry node_focus; } |
+     while read -r _; do
+        [ "$v" ] || v='abcdefg'
+        inner=$inner1 draw "$(targets focused)"
+        inner=$inner2 draw "$(targets normal)"
+    done

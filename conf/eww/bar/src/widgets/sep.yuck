@@ -1,0 +1,3 @@
+(defwidget sep []
+    (box :class "sep" :vexpand "false" :hexpand "false"
+    (label :class "sep" :text "|")))

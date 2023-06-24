@@ -1,0 +1,9 @@
+(defvar IMAGE "assets/void.png")
+(defwidget void []
+  (box :class "void" :orientation "v" :space-evenly "false" :vexpand "false" :hexpand "false" 
+                (box :class "void" 
+                :vexpand "false" 
+                :hexpand "false" 
+                :style "background-image: url('${IMAGE}');")
+              )
+            )

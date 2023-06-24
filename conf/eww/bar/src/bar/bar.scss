@@ -1,0 +1,93 @@
+$bg: #0d1417;
+$lightbg: #232a2d;
+$white: #dadada;
+$red: #e57474;
+$gray: #b3b9b8;
+$green: #8ccf7e;
+
+.bar {
+  font-family: feather;
+	font-family: Iosevka Nerd Font;
+  border-radius: 16px;
+  background-color: $bg;
+}
+
+tooltip {
+  margin: 10px;
+  background-color: $bg;
+}
+
+.works {
+  padding: 0px;
+}
+
+.0, .01, .02, .03, .04, .05, .011, .022, .033, .044, .055 {
+  font-size: 16px;
+  margin: 0px;
+  padding: 10px 9px;
+}
+
+// unoccupied
+
+.0 {
+  color: $lightbg;
+}
+
+// occupied
+
+.01, .02, .03, .04, .05 {
+  color: #808080;
+}
+
+// focused
+
+.011, .022, .033, .044, .055 {
+  color: $green;
+}
+
+.separator {
+  font-size: 16px;
+  margin: 0px 5px 0px 4px;
+}
+
+.minute, .hour {
+  font-size: 22px;
+}
+
+.sep {
+  color: $lightbg;
+  font-size: 22px;
+  margin: 0px 3px 0px 3px;
+}
+
+.poweroff {
+  font-size: 17px;
+  padding-right: 13px;
+  color: $red;
+}
+
+.void {
+  background-size: cover;	
+	background-position: center;
+	min-height: 23px;
+	min-width: 23px;
+	margin: 4px;
+	border-radius: 20px;
+}
+
+.mem {
+  background-color: $bg;
+  border-radius: 16px;
+  font-size: 23px;
+  margin: 0px 3px 0px 0px;
+}
+
+.iconmem {
+  color: $bg;
+}
+
+.membar {
+  color: $gray;
+  background-color: $lightbg;
+  border-radius: 10px;
+}

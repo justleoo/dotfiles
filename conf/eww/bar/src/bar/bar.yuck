@@ -1,0 +1,59 @@
+(deflisten workspace "scripts/workspaces")
+
+(include "src/widgets/void.yuck")
+(include "src/widgets/poweroff.yuck")
+(include "src/widgets/sep.yuck")
+(include "src/widgets/time.yuck")
+(include "src/widgets/mem.yuck")
+(include "src/widgets/date.yuck")
+
+(defwidget workspaces []
+  (literal :content workspace))
+
+(defwidget right []
+  (box :orientation "h" 
+    :space-evenly false  
+    :halign "end"
+    :class "left"
+    (mem)
+    (sep)
+    (time)
+    (sep)
+    (poweroff))
+  )
+
+(defwidget left []
+  (box :orientation "h" 
+       :space-evenly false  
+       :halign "start"
+       :class "right"
+  (void)
+  (workspaces)))
+
+(defwidget center []
+  (box :orientation "h" 
+        :space-evenly false  
+        :halign "center"
+        :class "center_modules"
+        (date)
+  )
+)
+
+(defwidget bar_1 []
+  (box :class "bar"
+       :orientation "h"
+    (left)
+    (center)
+    (right)
+    )
+  )
+
+(defwindow bar
+    :geometry (geometry :x "0%"
+                 :y "9px"
+                 :width "98%"
+                 :height "40px"
+                 :anchor "top center")
+    :stacking "fg"
+    :windowtype "dock"
+(bar_1))

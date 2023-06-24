@@ -1,0 +1,25 @@
+window:
+    opacity: 0.5
+import:
+- ~/.config/alacritty/themes/everblush.yml
+
+window:
+  opacity: 0.9
+class:
+  instance: alacritty
+  general: alacritty
+
+window:
+  padding:
+    x: 40
+    y: 40
+  dynamic_padding: true
+
+font:
+  bold:
+    family: Iosevka Nerd Font
+  italic:
+    family: Iosevka Nerd Font
+  normal:
+    family: Iosevka Nerd Font
+  size: 9

@@ -1,89 +1,181 @@
-<div align="center">
-  <h1>:hibiscus: leoo's dotfiles</h1>
-</div>
+<h1 align="center">
+    <img src="assets/dots.png" alt="banner">
+</h1>
 
 ## welcome!
 
-hello, thanks for visiting :heart:! if you like this [rice](https://thatnixguy.github.io/posts/ricing/) or even use, please, can you drop a star? i love it! you're now in `sway` branch, but you can see another rice on [bspwm](https://github.com/justleoo/dotfiles/tree/bspwm) branch!
+hey, thanks for visiting :heart:! if you like this [rice](https://thatnixguy.github.io/posts/ricing/) or even use it, can you drop a star please? i really appreciate it!
 
-## about
+## about:
 
-<img src="assets/showcase.png" alt="rice" align="right" width="400px">
+<img src="assets/rice1.png" alt="rice" align="right" width="400px">
+<img src="assets/rice2.png" alt="rice" align="right" width="400px">
 
-- OS [Void](https://voidlinux.org) simple, light and amazing 👽
-- WM [sway](https://swaywm.org/) fast, simple and cool! 🍷
-- bar [waybar](https://github.com/Alexays/Waybar) simple to configure 🌌
-- terminal [foot](https://codeberg.org/dnkl/foot) fast 🐾
-- theme [everblush](https://github.com/everblush) beautiful! ✨
+- OS: [Void Linux](https://voidlinux.org) 🛸
+- Window Manager: [bspwm](https://github.com/baskerville/bspwm) 🪟
+- bar: [eww](https://github.com/elkowar/eww) 🍄
+- application launcher: [rofi](https://github.com/davatorium/rofi) 🚀
+- terminal: [alacritty](https://github.com/alacritty/alacritty/) ✨
+- theme: [everblush](https://github.com/everblush/) 🦋
+- menu: [jgmenu](https://jgmenu.github.io/) 🌌
 
-## installation
+## installation:
 
-install packages:
+#### 1. installing bspwm
 
-on arch:
+on void:
 
 ```sh-session
-$ paru -S sway waybar foot wofi
+$ xbps-install bspwm
+```
+
+on arch linux:
+
+```sh-session
+$ yay -S bspwm
+```
+(you can use another aur helper)
+
+on gentoo:
+
+```sh-session
+$ emerge bspwm
+```
+
+on ubuntu or debian:
+
+```sh-session
+$ apt install bspwm
+```
+
+on fedora:
+
+```sh-session
+$ dnf install bspwm
+```
+
+#### 2. installing eww 
+
+OBS: if you are a void user, you can use the [eww-template](https://github.com/monke0192/eww-template)
+
+for first, install `cargo` 🦀:
+
+```sh-session
+$ curl https://sh.rustup.rs -sSf | sh
+```
+
+it will download a script, and start the installation. if everything goes well, you’ll see this appear: `Rust is installed now. Great!`
+
+clone and cd into eww folder:
+
+```sh-session
+$ git clone https://github.com/elkowar/eww.git && cd eww
+```
+
+now compile the eww binary: 
+
+```sh-session
+$ cargo build --release -j $(nproc)
+```
+
+now move the binary to `/usr/bin` and give permissions:
+
+```sh-session
+$ sudo mv target/release/eww /usr/bin/ && sudo chmod +x /usr/bin/eww
+```
+
+and finally done the installation of eww! 🌌 
+
+#### 3. installing the packages
+
+on arch linux:
+
+```sh-session
+$ yay -S alacritty sxhkd rofi ninja picom jgmenu
+```
+
+on gentoo:
+
+```sh-session
+$ emerge alacritty sxhkd rofi picom
+```
+installing jgmenu on gentoo:
+
+```sh-session
+$ git clone https://github.com/johanmalm/jgmenu.git
+$ cd jgmenu
+$ ./configure
+$ make
+$ sudo make install
 ```
 
 on void:
 
 ```sh-session
-$ xbps-install -S sway Waybar foot wofi
+$ xbps-install -S alacritty sxhkd rofi picom jgmenu
 ```
 
-on fedora
+on fedora: 
 
 ```sh-session
-$ dnf install sway waybar foot wofi
+$ dnf install sxhkd alacritty rofi picom jgmenu
 ```
 
-## clone the files
+on ubuntu:
 
 ```sh-session
-$ git clone https://github.com/justleoo/dotfiles/ && cd dotfiles/
+$ apt install sxhkd rofi picom jgmenu
 ```
 
-## move the files to your `~/.config/`
+to install alacritty in ubuntu you need run this:
 
 ```sh-session
-$ mv conf/foot/ ~/.config/
-$ mv conf/waybar/ ~/.config/
-$ mv conf/sway/ ~/.config/
+$ sudo add-apt-repository ppa:aslatter/ppa
+$ sudo apt update
+$ sudo apt install alacritty
 ```
 
-## running sway
+#### finally install the dots!
 
-so, finally! how run sway? try to just run in your tty `sway`, or `WLR_NO_HARDWARE_CURSORS=1 sway`.
+```sh-session
+$ git clone https://github.com/justleoo/dotfiles/ && cd dotfiles
+$ git checkout bspwm-everblush
+$ mv conf/bspwm ~/.config/
+$ mv conf/eww ~/.config/
+$ mv conf/jgmenu ~/.config/
+$ mv conf/alacritty ~/.config/
+$ mv conf/picom ~/.config/
+$ mv conf/sxhkd ~/.config/
+$ chmod +x ~/.config/bspwm/*
+$ chmod +x ~/.config/eww/bar/scripts/*
+```
 
-## gallery 🧩
+have a good time ricing! :heart:
 
-a simple and beautiful bar
+## gallery 📷
+
+#### simple horizontal bar
 
 <img src="assets/bar.png">
 
-foot terminal with a beautiful bash prompt
+#### a menu with useful functions
 
-<img src="assets/prompt_and_terminal.png">
+<img src="assets/menu.png">
 
-## keys 🔑
+#### custom rofi 
 
-| key | action |
-|------|-------|
-|<kbd>super + enter</kbd>| open foot|
-|<kbd>super + r</kbd>| open wofi|
-|<kbd>super + e</kbd>|enter resize mode (use the right, left, up and down arrow keys to use this mode working)|
-|<kbd>super + [1-0]</kbd>|go to workspaces|
-|<kbd>super + q</kbd>|close a window|
+<img src="assets/rofi.png">
 
-## thanks
+## credits:
 
-[siduck](https://github.com/siduck)
+[AlphaTechnolog](https://github.com/alphatechnolog) for help me a lot!! <3
 
-[AlphaTechnolog](https://github.com/alphatechnolog) 
+[saimoomedits](https://github.com/saimoomedits/dotfiles) for help me with eww bar
 
-[saimoomedits](https://github.com/saimoomedits)
+[janleigh](https://github.com/janleigh) for the borders script and more
 
-## license
+##### and thank you too! i hope you liked it.
 
-see [LICENSE](https://github.com/justleoo/dotfiles/blob/sway/LICENSE) file.
+## LICENSE
+
+MIT License. see [LICENSE](https://github.com/justleoo/dotfiles/blob/bspwm-everblush/LICENSE) file.

@@ -1,0 +1,13 @@
+(defpoll memory :interval "15s" "scripts/memory")
+(defwidget mem []
+    (box :class "mem" :vexpand "false" :hexpand "false" 
+        (circular-progress :value memory
+            :class "membar"
+            :thickness 4
+        (button 
+            :class "iconmem"
+            :limit-width 2
+            :tooltip "Using ${memory}%"
+            :show_truncated false
+            :wrap false
+            ""))))

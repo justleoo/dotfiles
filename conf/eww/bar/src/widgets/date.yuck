@@ -1,0 +1,10 @@
+(defpoll day :interval "1h" "date '+%A, %d of %B'")
+
+(defwidget date []
+    (box :class "date-container"
+         :orientation "h"
+         :space-evenly true
+         :halign "center"
+      (label :text "${day}") 
+    )
+)
